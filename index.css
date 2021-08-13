@@ -12,8 +12,15 @@ body{
  display: flex;
  justify-content: center;
  align-items: center;
- margin: 50px 0 10px 0;
+ margin-top: 10px;
+ width: 60px;
+ height: 60px;
+
 }
+.logo>img{
+    width: 100%;
+}
+
 
 .main{
     display: flex;
@@ -22,40 +29,115 @@ body{
     flex-direction: column;
 }
 .txt{
-    margin:20px 0 10px 0;
+
     font-size:30px;
-    font-weight: 100px;
     color:hsl(0, 0%, 59%);
+    text-align: center;
 }
 
 p>strong{
     color: black;
-font-weight: 700;
+    font-weight: bold;
 }
 
 .txto{
     color:hsl(0, 0%, 59%);
-    margin-bottom: 30px;
+    margin: 10px;
+    text-align: center;
+    font-size: 12px;
 
 }
 
 .email{
     margin: 10px 10px 30px ;
-    width: 200px;
+    width: 250px;
     border-radius: 50px;
-    padding: 10px 20px;
+    padding: 10px 10px;
+    margin-left: 10px;
     outline: none;
-    border: 1px solid hsl(0, 0%, 59%);
+    border: 1px solid hsla(0, 0%, 59%, 0.295);
+}
+
+::placeholder{
+    color: hsla(0, 0%, 59%, 0.295);
 }
 
 .cta{
-    margin: 10px 0 30px 0;
-    width: 150px;
+   
+    width: 125px;
     border-radius: 50px;
     padding: 10px 20px;
     background-color: hsl(223, 87%, 63%);
     color:white;
     outline: none;
     border: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.front-image{
+    margin-top: 20px;
+    width: 400px;
+    height: 300px;
+}
+.front-image>img{
+    width: 100%;
+}
+
+.icons{
+    color: hsl(223, 87%, 63%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    margin-bottom: 20px;
+   
+}
+
+.icons>div{
+    width: 20px;
+    height: 20px;
+    border: 0.1px solid hsla(0, 0%, 59%, 0.151);
+    border-radius: 100%;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+    color:hsl(0, 0%, 59%);
+    font-size: 10px;
+    margin-bottom: 30px;
+}
+
+@media (max-width:768px) {
+    
+    .txt{
+     font-size: 20px;
+    }
+
+    .txto{
+        font-size: 10px;
+    }
+    
+    .email{
+        /* flex-direction: column;   */
+        margin: 10px 0 ;
+        width: 100%;
+        padding: 10px; 
+    }
+    .cta{
+        /* display: flex;
+        justify-content: center;
+        align-items: center; */
+        width: 100%;
+        padding:10px; 
+    }
+    .front-image{
+        margin: 40px;
+        width: 300px;
+        height: 200px;
+    }
+
 }
 
