@@ -5,7 +5,8 @@ const emailError = document.querySelector('.error-message')
 ctaBtn.onclick = function () {
     if (email.value === "") {
         email.style.borderColor = "red"
-        emailError.textContent = 'Your email is empty fggsgshshujshuiui dgdchffdcfffgfgfffggfg'
+      
+        emailError.textContent = 'Your email is empty'
         emailError.style.color = "red"
         return false
     } else if (!(email.value.includes("@"))) {
@@ -14,6 +15,7 @@ ctaBtn.onclick = function () {
         emailError.style.color = "red"
         return false
     }
+      // trying to work on valid email properties...learning on regrex expression 
     email.style.borderColor = "#ccc"
     emailError.textContent = email.value
     emailError.textContent ="You are good to go!!"
