@@ -8,6 +8,14 @@ body{
     background-color: white;
     font-family: "Libre Franklin";
 }
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 .logo {
  display: flex;
  justify-content: center;
@@ -21,13 +29,6 @@ body{
     width: 100%;
 }
 
-
-.main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
 .txt{
 
     font-size:30px;
@@ -42,7 +43,7 @@ p>strong{
 
 .txto{
     color:hsl(0, 0%, 59%);
-    margin: 10px;
+    margin: 20px;
     text-align: center;
     font-size: 12px;
 
@@ -52,24 +53,24 @@ p>strong{
     justify-content: center;
     align-items: center;
   } 
-  
-.email-box>span{
-    margin-left: 10px;
-    color: hsl(354, 100%, 66%);
-    font-size: 13px;
-  }
+
   .email-box{
     display: flex;
     flex-direction: column;
     height: 40px;
 
   }
+  .email-box>span{
+    margin-left: 10px;
+    color: hsl(354, 100%, 66%);
+    font-size: 13px;
+    flex-wrap: wrap;
+  }
 .email{
     /* margin: 10px 10px 30px ; */
     width: 250px;
     border-radius: 50px;
     padding: 10px 20px;
-    /* margin-left: 10px; */
     outline: none;
     border: 1px solid hsla(0, 0%, 59%, 0.295);
 }
@@ -94,8 +95,8 @@ p>strong{
     color:white;
     outline: none;
     border: none;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;}
+
 .front-image{
     margin-top: 40px;
     width: 400px;
@@ -106,13 +107,14 @@ p>strong{
 }
 
 .icons{
-    color: hsl(223, 87%, 63%);
-    border-radius: 50%;
+   
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 10px;
     margin-bottom: 20px;
+    color: hsl(223, 87%, 63%);
+    border-radius: 50%;
    
 }
 
@@ -135,20 +137,23 @@ footer{
 }
 
 @media (max-width:768px) {
-    
+
     .txt{
      font-size: 20px;
+     /* margin: 10px; */
     }
 
     .txto{
         font-size: 10px;
+        margin:10px;
+
     }
     .notify-form {
         flex-direction: column;  
       }
 
     .button-box{
-        margin: 25px 0;
+        margin-top: 25px;
         width: 100%;
       }
     .email{
