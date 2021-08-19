@@ -136,6 +136,7 @@ p>strong{
     background-color: hsl(223, 87%, 63%);
     color: white;
     border: 1px solid white;
+    cursor: pointer;
 }
 footer{
     color:hsl(0, 0%, 59%);
